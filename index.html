@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCYN - Premium Anime Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>ARCYN</h1>
+                    <span class="live-tag">LIVE</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#watchlist">Watchlist</a></li>
+                    <li><a href="#premium" class="premium-link">Premium</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search anime..." id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="login-btn">Login</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Unlimited Anime Streaming</h2>
+                    <p>Watch thousands of anime episodes and movies in HD quality. From classics to the latest releases.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Start Watching</button>
+                        <button class="btn-secondary">Browse Library</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="featured-anime">
+                        <div class="anime-poster">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="anime-info">
+                            <h3>Featured Anime</h3>
+                            <p>Now Streaming</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>9.2/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose ARCYN?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>HD Streaming</h3>
+                        <p>Watch in crystal clear quality with adaptive streaming</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-download"></i>
+                        <h3>Offline Viewing</h3>
+                        <p>Download episodes and watch anywhere, anytime</p>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>Join discussions and connect with fellow anime fans</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>New Episodes</h3>
+                        <p>Get notified when new episodes are released</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="browse" class="anime-sections">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular This Week</h2>
+                    <button class="view-all">View All</button>
+                </div>
+                <div class="anime-grid" id="popularAnime">
+                    <!-- Anime cards will be populated by JavaScript -->
+                </div>
+
+                <div class="section-header">
+                    <h2>Recently Added</h2>
+                    <button class="view-all">View All</button>
+                </div>
+                <div class="anime-grid" id="recentAnime">
+                    <!-- Anime cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="premium" class="premium-section">
+            <div class="container">
+                <div class="premium-content">
+                    <div class="premium-text">
+                        <h2>Unlock Premium Features</h2>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ad-free streaming</li>
+                            <li><i class="fas fa-check"></i> Offline downloads</li>
+                            <li><i class="fas fa-check"></i> Early access to new episodes</li>
+                            <li><i class="fas fa-check"></i> Exclusive premium content</li>
+                            <li><i class="fas fa-check"></i> Multiple device streaming</li>
+                        </ul>
+                        <button class="btn-premium">Get Premium</button>
+                    </div>
+                    <div class="premium-visual">
+                        <div class="premium-card">
+                            <i class="fas fa-crown"></i>
+                            <h3>Premium Plan</h3>
+                            <p class="price">$9.99/month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="watchlist" class="watchlist-section">
+            <div class="container">
+                <h2>Your Watchlist</h2>
+                <div class="watchlist-content">
+                    <div class="empty-watchlist">
+                        <i class="fas fa-heart"></i>
+                        <h3>Your watchlist is empty</h3>
+                        <p>Add anime to your watchlist to keep track of what you want to watch</p>
+                        <button class="btn-primary">Browse Anime</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ARCYN</h3>
+                    <p>Your ultimate destination for anime streaming.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Browse</h4>
+                    <ul>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Genres</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">OVAs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Recommendations</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ARCYN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
